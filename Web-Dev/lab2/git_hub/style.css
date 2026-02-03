@@ -1,0 +1,203 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #1f2328; 
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px; 
+    margin: 0 auto;  
+    padding: 0 24px;   
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800; 
+    margin-bottom: 24px;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #636c76; 
+    margin-bottom: 32px;
+}
+
+.btn-hero {
+    background-color: #1f2328; 
+    color: white;
+    padding: 16px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer; 
+}
+
+.btn-hero:hover {
+    opacity: 0.9; 
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin-bottom: 80px;
+    align-items: start; 
+}
+
+.card {
+    border: 1px solid #d0d7de; 
+    border-radius: 12px;
+    padding: 32px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.card.enterprise {
+    border: 2px solid #0969da; 
+}
+
+.badge {
+    position: absolute; 
+    top: -12px; 
+    left: 50%;  
+    transform: translateX(-50%); 
+    background-color: #0969da;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+}
+
+.sub-head {
+    color: #636c76;
+    font-size: 14px;
+    margin-bottom: 24px;
+    min-height: 40px; 
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.currency {
+    font-size: 24px;
+    vertical-align: top; 
+}
+
+.period {
+    font-size: 16px;
+    font-weight: normal;
+    color: #636c76;
+}
+
+.btn-card {
+    display: block;
+    width: 100%; 
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none; 
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    color: #24292f;
+}
+
+.btn-outline:hover {
+    background: #f3f4f6;
+}
+
+.btn-solid {
+    background: #1f2328;
+    color: white;
+    border: none;
+}
+
+.features {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #1f2328;
+}
+
+.features li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.features li::before {
+    content: "✓";
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.addons-section {
+    margin-bottom: 100px;
+}
+
+.addons-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addon-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.addon-card p {
+    color: #636c76;
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid, .addons-grid {
+        grid-template-columns: 1fr; 
+    }
+    .hero h1 {
+        font-size: 32px; 
+    }
+}
